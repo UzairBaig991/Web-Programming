@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "mybox" style="padding: 20px; width: 100px; height: 100px; background-color: lightblue;"></div>
+    <script>
+        const box = document.getElementById('mybox');
+        box.addEventListener('mouseover', function(){
+        box.style.backgroundColor='orange';
+        box.innerText='Mouse Cursor on box';
+    });
+        box.addEventListener('mouseout', function(){
+        box.style.backgroundColor='lightblue';
+        box.innerText='Come Here..';
+    });
+    </script>
+</body>
+</html>

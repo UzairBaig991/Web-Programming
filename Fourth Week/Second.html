@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Second Task</h1>
+    <p id="second-paragraph">This is a second Paragraph.</p>
+    <button onclick="abc()">Change Text</button>
+    <p id="date-time"></p>
+    <button onclick="document.getElementById('date-time').innerHTML=Date()">Show Date and Time</button>
+    <button onclick="document.getElementById('heading').style.color='red'">Change CSS by Js.</button>
+    <script>
+        function abc(){
+            document.getElementById("second-paragraph").innerHTML = "This is a second Paragraph. This paragraph has been changed by using Javascript."
+        
+        }
+    </script>
+</body>
+</html>

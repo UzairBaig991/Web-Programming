@@ -1,0 +1,11 @@
+h1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+h2{
+    margin: 35px;
+    padding: 20px 40px;
+    border: solid yellowgreen 5px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Key Finder</h1>
+    <input id="k" type="text" placeholder="Press Any Key">
+    <p id="dsp"></p>
+
+    <script>
+        const k = document.getElementById("k");
+
+        k.addEventListener("keydown", function(event) {
+            let message = "You Pressed: " + event.key;
+
+            // Extra features for arrow keys
+            if (event.key === "ArrowUp") {
+                message += " (Up Arrow ↑)";
+            } 
+            else if (event.key === "ArrowDown") {
+                message += " (Down Arrow ↓)";
+            } 
+            else if (event.key === "ArrowLeft") {
+                message += " (Left Arrow ←)";
+            } 
+            else if (event.key === "ArrowRight") {
+                message += " (Right Arrow →)";
+            }
+
+            // Show key code as well
+            message += " | Key Code: " + event.keyCode;
+
+            document.getElementById("dsp").innerText = message;
+        });
+    </script>
+</body>
+</html>

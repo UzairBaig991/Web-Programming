@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+            border: 2px solid #333;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #333;
+        }
+
+        th {
+            background-color: grey;
+            color: blue;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #f1f7ff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Information</h2>
+        <table>
+            <tr>
+                <th>Registration Number</th>
+                <th>Student Name</th>
+                <th>Address</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr>
+                <td>2024-CS-001</td>
+                <td>Ali Khan</td>
+                <td>House 12, Street 5, Lahore</td>
+                <td>0300-1234567</td>
+            </tr>
+            <tr>
+                <td>2024-CS-002</td>
+                <td>Sara Ahmed</td>
+                <td>Flat 8, Gulberg, Islamabad</td>
+                <td>0312-9876543</td>
+            </tr>
+            <tr>
+                <td>2024-CS-003</td>
+                <td>Usman Malik</td>
+                <td>Near City Park, Karachi</td>
+                <td>0333-4567890</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

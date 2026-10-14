@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moellim | Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            min-height: 100vh;
+            color: #1a1a2e;
+            padding-top: 48px;
+        }
+
+        /* ===== SAME NAVBAR AS DASHBOARD ===== */
+        .navbar {
+            background: #2d2d2d;
+            color: #fff;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .navbar .brand {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            padding: 6px 4px;
+            transition: all 0.25s ease;
+        }
+
+        .nav-links a:hover {
+            font-size: 18px;
+            color: #ffd700;
+        }
+
+        .nav-links a.active {
+            color: #ffd700;
+            font-weight: 600;
+        }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 24px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #1a1a2e 30%, #4f46e5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto 36px;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 14px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(79, 70, 229, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(79, 70, 229, 0.4);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #4f46e5;
+            padding: 14px 32px;
+            border-radius: 14px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            text-decoration: none;
+            border: 2px solid #e0e7ff;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: #f5f3ff;
+            border-color: #c7d2fe;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SAME NAVBAR -->
+    <nav class="navbar">
+        <div class="brand">Riphah International University -Moellim</div>
+        <ul class="nav-links">
+            <li><a href="third.html" class="active">Home</a></li>
+            <li><a href="moellim-dashboard.html">Dashboard</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Moellim</h1>
+        <p>Discover a modern, elegant experience. Clean design, smooth interactions, and a professional look that stands out.</p>
+        
+        <div class="hero-buttons">
+            <a href="moellim-dashboard.html" class="btn-primary">Go to Dashboard</a>
+            <a href="#" class="btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+</body>
+</html>

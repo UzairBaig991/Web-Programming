@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="bb" src = "Bulb-off.png" alt="" style="width: 200px">
+    <button onclick="onf()">On/Off</button>
+    <script>
+        function onf(){
+            let bulb = document.getElementById('bb');
+            if(bulb.src.includes("Bulb-off.png")){
+                bulb.src = "Bulb-on.png";
+            } else {
+                bulb.src = "Bulb-off.png";
+            }
+            }
+    </script>
+</body>
+</html>
